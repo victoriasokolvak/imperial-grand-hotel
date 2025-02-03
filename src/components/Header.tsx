@@ -1,11 +1,11 @@
 import Image from "next/image";
-import BurgerMenuIcon from "./ui/BurgerMenuIcon";
+import { BurgerMenuIcon } from "./ui/BurgerMenuIcon";
 import { navigationItems } from "@/constants/navItems";
 
-const Header = () => {
+export const Header = () => {
   return (
-    <header className="flex justify-between items-center absolute top-0 left-0 w-full z-10 px-8 pt-9 md:px-[74px] xl:px-[120px]">
-      <div className="w-[160px] h-[33px] lg:w-[216px] lg:h-[58px] relative">
+    <header className="flex justify-between items-center absolute top-0 w-full z-10 px-8 pt-9 md:px-[74px] xl:px-[120px] max-w-[1440px] mx-auto">
+      <div className="w-[160px] h-[40px] lg:w-[216px] lg:h-[58px] relative">
         <Image 
           src='./Logo.svg'
           alt="Logo"
@@ -30,5 +30,3 @@ const Header = () => {
     </header>
   );
 };
-
-export default Header;

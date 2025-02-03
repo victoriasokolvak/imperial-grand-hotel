@@ -1,4 +1,4 @@
-const BurgerMenuIcon = () => {
+export const BurgerMenuIcon = () => {
   return (
     <svg
       width="23"
@@ -19,5 +19,3 @@ const BurgerMenuIcon = () => {
 
   );
 };
-
-export default BurgerMenuIcon;;
