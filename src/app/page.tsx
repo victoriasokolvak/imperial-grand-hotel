@@ -1,5 +1,11 @@
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+
 export default function Home() {
   return (
-    <div>Imperial Grand Hotel</div>
+    <div className="relative">
+      <Hero />
+      <Header />
+    </div>
   );
 };

@@ -1,9 +1,14 @@
-import { Forum } from 'next/font/google';
+import { Forum, Poppins } from 'next/font/google';
 import "./globals.css";
 import { Metadata } from 'next';
 
 const forum = Forum({
   weight: '400',
+  subsets: ['latin'],
+});
+
+const poppins = Poppins({
+  weight: '300',
   subsets: ['latin'],
 });
 
@@ -23,7 +28,7 @@ export default function RootLayout({
         <link rel="icon" href="./Favicon.svg" />
       </head>
       <body
-        className={forum.className}
+        className={`${forum.className} ${poppins.className}`}
       >
         {children}
       </body>

@@ -6,10 +6,18 @@
   --background: #FFFFFF;
   --foreground: #171717;
   --font-forum: 'Forum', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-forum), Arial, Helvetica, sans-serif;
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+.font-forum {
+  font-family: var(--font-forum);
 }
