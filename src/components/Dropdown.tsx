@@ -10,7 +10,7 @@ interface DropdownProps {
 export const Dropdown: React.FC<DropdownProps> = ({ options, selected, onSelect }) => {
   return (
     <Menu as="div" className="relative w-full">
-      <MenuButton className="bg-[#302F2F] text-[#BF9766] text-[13px] lg:text-[14px] w-full py-3 px-4 flex justify-between items-center">
+      <MenuButton className="bg-[#302F2F] text-[#BF9766] text-[13px] xl:text-[14px] w-full py-3 px-4 flex justify-between items-center">
         {selected}
         <Triangle />
       </MenuButton>
