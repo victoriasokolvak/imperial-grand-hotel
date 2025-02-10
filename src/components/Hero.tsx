@@ -11,12 +11,16 @@ export const Hero = () => {
         alt='Hero Mobile'
         fill
         className="object-cover block md:hidden"
+        priority={true}
+        rel="preload"
       />
       <Image
         src='./Hero.png' //IMPORT
         alt='Hero'
         fill
         className="object-cover hidden md:block"
+        priority={true}
+        rel="preload"
       />
 
       <div className="absolute inset-0 bg-black opacity-50"></div>

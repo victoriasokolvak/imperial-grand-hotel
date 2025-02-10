@@ -26,7 +26,7 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({ onClose }) => {
         </div>
       </div>
 
-      <nav className="flex justify-center text-center mt-28 md:mt-36">
+      <nav className="flex justify-center text-center mt-20 md:mt-36">
         <ul className="flex flex-col justify-between gap-7 md:gap-10">
           {navigationItems.map((link) => (
             <li key={link.name}>

@@ -9,13 +9,13 @@ export const AboutSection = () => {
         <div className="md:flex-1">
         <div className="relative h-[290px] md:w-full md:h-full">
             <Image 
-              src="./About-section-mobile.png"
+              src="./About-section-mobile.png" //IMPORT
               alt="Reception desk"
               fill
               className="object-cover md:hidden"
             />
             <Image 
-              src="./About-section.png"
+              src="./About-section.png" //IMPORT
               alt="Reception desk"
               fill
               className="object-cover hidden md:block"

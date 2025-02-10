@@ -26,6 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="./Favicon.svg" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='anonymous'></link>
       </head>
       <body
         className={`${forum.className} ${poppins.className}`}
