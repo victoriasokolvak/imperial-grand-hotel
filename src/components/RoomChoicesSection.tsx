@@ -16,8 +16,7 @@ export const RoomChoicesSection = () => {
             </h1>
         </div>
 
-          <Slider />
-
+        <Slider />
       </div>
     </section>
   );

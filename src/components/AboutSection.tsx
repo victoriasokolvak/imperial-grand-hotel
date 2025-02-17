@@ -7,7 +7,7 @@ export const AboutSection = () => {
     <section className="flex justify-center items-center w-full mt-[460px] md:mt-[150px] xl:mt-[180px] pb-[140px] md:pb-[150px] lg:pb-[144px]">
       <div className="flex flex-col md:flex-row md:justify-between md:gap-[40px] lg:gap-[120px] w-full max-w-[1440px] px-8 md:px-[74px] xl:px-[120px]">
         <div className="md:flex-1">
-        <div className="relative h-[290px] md:w-full md:h-full">
+          <div className="relative h-[290px] md:w-full md:h-full">
             <Image 
               src="./About-section-mobile.png" //IMPORT
               alt="Reception desk"
