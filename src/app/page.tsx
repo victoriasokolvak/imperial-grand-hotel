@@ -4,6 +4,7 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { ReviewsSection } from "@/components/ReviewsSection";
 import { RoomChoicesSection } from "@/components/RoomChoicesSection";
+import { TeamSection } from "@/components/TeamSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutSection />
       <RoomChoicesSection />
       <ReviewsSection />
+      <TeamSection />
     </div>
   );
 };

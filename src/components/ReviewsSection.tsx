@@ -12,10 +12,10 @@ export const ReviewsSection = () => {
         <div className="flex flex-col items-center mb-[15px] lg:mb-[32px]">
           <div className="border-l-[1px] border-[#BF9766] h-[105px] mb-8 md:mb-4 lg:mb-8"></div>
           <h2 className="uppercase text-[#BF9766] text-center font-light text-[18px] lg:text-[24px] mb-1 tracking-[0.2em] md:tracking-[0.25em]">
-            Our customer review
+            Our customers&apos; reviews
           </h2>
           <h1 className="text-center font-forum text-[#171717] text-[35px] md:text-[40px] lg:text-[64px] font-normal leading-[1.26] mb-1">
-            What Our Client Says
+            What Our Clients Say
           </h1>
           <div className='flex justify-between w-[89px] lg:w-[173px] gap-1 xl:gap-2'>
             {stars.map((_, index) => (
