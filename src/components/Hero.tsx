@@ -42,9 +42,11 @@ export const Hero = () => {
               <h3 className='text-white text-[13px] xl:text-[18px] tracking-wide mb-[6px] xl:mb-3'>
                 4.8 Rated Around The World
               </h3>
-              <div className='flex justify-between w-[52px] xl:w-32'>
+              <div className='flex justify-between w-[52px] xl:w-32 gap-[3px] xl:gap-[6px]'>
                 {stars.map((_, index) => (
-                  <Star key={index} />
+                  <div key={index} className='w-2 h-2 xl:w-[20px] xl:h-[20px]'>
+                    <Star />
+                  </div>
                 ))}
               </div>
             </div>

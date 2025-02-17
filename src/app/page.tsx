@@ -2,6 +2,7 @@ import { AboutSection } from "@/components/AboutSection";
 import { BookingWidget } from "@/components/BookingWidget";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { ReviewsSection } from "@/components/ReviewsSection";
 import { RoomChoicesSection } from "@/components/RoomChoicesSection";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <BookingWidget />
       <AboutSection />
       <RoomChoicesSection />
+      <ReviewsSection />
     </div>
   );
 };
