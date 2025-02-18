@@ -19,7 +19,7 @@ export const TeamSection = () => {
           {employees.map((employee) => (
             <div
               key={employee.name}
-              className="w-[300px] h-auto relative group active overflow-hidden"
+              className="w-[300px] h-auto relative group overflow-hidden"
             >
               <Image
                 src={employee.src}
