@@ -4,21 +4,16 @@ import { Arrow } from "./ui/Arrow";
 
 export const AboutSection = () => {
   return (
-    <section className="flex justify-center items-center w-full mt-[460px] md:mt-[150px] xl:mt-[180px] pb-[140px] md:pb-[150px] lg:pb-[144px]">
+    <section id="about" className="flex justify-center items-center w-full mt-[460px] md:mt-[150px] xl:mt-[180px] pb-[140px] md:pb-[150px] lg:pb-[144px]">
       <div className="flex flex-col md:flex-row md:justify-between md:gap-[40px] lg:gap-[120px] w-full max-w-[1440px] px-8 md:px-[74px] xl:px-[120px]">
         <div className="md:flex-1">
           <div className="relative h-[290px] md:w-full md:h-full">
             <Image 
-              src="./About-section-mobile.png" //IMPORT
+              src="./About-section.png"
               alt="Reception desk"
+              sizes="(max-height: 640px) 290px, (min-width: 641px) 100%, (min-height: 641) 100%"
               fill
-              className="object-cover md:hidden"
-            />
-            <Image 
-              src="./About-section.png" //IMPORT
-              alt="Reception desk"
-              fill
-              className="object-cover hidden md:block"
+              className="object-cover"
             />
             <div className="absolute -bottom-[25px] right-[42px] md:right-0 md:translate-x-1/2 md:top-1/2 md:-translate-y-1/2 bg-[#BF9766] w-[50px] h-[50px] lg:w-[100px] lg:h-[100px]">
               <PlayButton />
@@ -45,12 +40,14 @@ export const AboutSection = () => {
               Let us make your stay a truly memorable one.
             </p>
             <div className="flex items-center">
-              <button className="flex justify-between py-[10px] lg:py-[14px] px-[6px] border-y-[1px] border-[#BF9766] items-center gap-[20px] text-[#BF9766] text-[13px] xl:text-[16px] italic leading-none">
-                Discover More
-                <div className="w-[6px] h-3">
-                  <Arrow />
-                </div>
-              </button>
+              <a href="#services">
+                <button className="flex justify-between py-[10px] lg:py-[14px] px-[6px] border-y-[1px] border-[#BF9766] items-center gap-[20px] text-[#BF9766] text-[13px] xl:text-[16px] italic leading-none transition-transform duration-300 hover:translate-x-1">
+                  Discover More
+                  <div className="w-[6px] h-3">
+                    <Arrow />
+                  </div>
+                </button>
+              </a>
             </div>
           </div>
         </div>

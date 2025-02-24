@@ -67,7 +67,7 @@ export const Slider = () => {
         </Swiper>
       </div>
 
-      <div className="-mt-8 md:-mt-0 md:-mr-8 xl:-mr-36 z-10">
+      <div className="-mt-8 md:-mt-0 md:-mr-8 xl:-mr-36">
         <Swiper
           modules={[Navigation, Controller]}
           spaceBetween={50}

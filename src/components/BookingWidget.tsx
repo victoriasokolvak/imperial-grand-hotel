@@ -22,7 +22,7 @@ export const BookingWidget = () => {
   ];
 
   return (
-    <div className="absolute flex justify-center top-[616px] md:top-[530px] lg:top-[650px] max-w-[1440px] w-full">
+    <div id="booking" className="absolute flex justify-center top-[616px] md:top-[530px] lg:top-[650px] max-w-[1440px] w-full">
       <div className="absolute md:right-[74px] xl:right-[120px] mx-auto bg-[#282828] w-[286px] xl:w-[406px]">
         <div className="space-y-6 lg:space-y-8 p-10 xl:p-[60px]">
           {dateFields.map(({ label, value, onChange }) => (
@@ -33,6 +33,10 @@ export const BookingWidget = () => {
                     selected={value}
                     onChange={onChange}
                     dateFormat="d MMMM yyyy"
+                    calendarClassName="custom-calendar"
+                    dayClassName={(date) =>
+                      date.toDateString() === value?.toDateString() ? "custom-selected-day" : ""
+                    }
                     className="bg-[#302F2F] text-[13px] xl:text-[14px] text-[#BF9766] py-3 px-4 w-full focus:outline-none"
                   />
                   <div className="absolute right-4 top-0 mt-[10px]">
@@ -63,7 +67,7 @@ export const BookingWidget = () => {
           </div>
 
           <div className="flex justify-center items-center">
-            <button className="flex justify-between items-center mt-1 xl:mt-[28px] gap-3 xl:gap-4 text-[#BF9766] text-[13px] xl:text-[16px] italic">
+            <button className="flex justify-between items-center mt-1 xl:mt-[28px] gap-3 xl:gap-4 text-[#BF9766] text-[13px] xl:text-[16px] italic transition-transform duration-300 hover:translate-x-1">
               Check Availability
               <div className="w-[7px] h-[14px]">
                 <Arrow />

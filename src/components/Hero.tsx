@@ -5,22 +5,22 @@ export const Hero = () => {
   const stars = new Array(5).fill(true);
 
   return (
-    <div className="relative w-full h-[700px] md:h-[700px] lg:h-[900px]">
+    <div id='home' className="relative w-full h-[700px] md:h-[700px] lg:h-[900px]">
       <Image
-        src='./Hero-mobile.png' //IMPORT
+        src='./Hero-mobile.png'
         alt='Hero Mobile'
         fill
+        sizes="100vw"
         className="object-cover block md:hidden"
-        priority={true}
-        rel="preload"
+        priority
       />
       <Image
-        src='./Hero.png' //IMPORT
+        src='./Hero.png'
         alt='Hero'
         fill
+        sizes="100vw"
         className="object-cover hidden md:block"
-        priority={true}
-        rel="preload"
+        priority
       />
 
       <div className="absolute inset-0 bg-black opacity-50"></div>

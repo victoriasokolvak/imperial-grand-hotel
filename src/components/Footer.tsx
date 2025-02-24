@@ -15,7 +15,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="flex md:justify-center items-center w-full bg-[#282828] py-[70px] lg:py-[100px]">
+    <footer id="contact" className="flex md:justify-center items-center w-full bg-[#282828] py-[70px] lg:py-[100px]">
       <div className="flex flex-col w-full max-w-[1440px] px-8 md:px-[74px] xl:px-[120px]">
         <div className="flex flex-col md:flex-row justify-between gap-[30px] w-[280px] md:w-full mb-[40px] xl:mb-[60px]">
           <div className="flex flex-col md:w-[180px] lg:w-[380px]">
@@ -81,9 +81,11 @@ export const Footer = () => {
           <div className="flex-1 h-[1px] bg-white"></div>
             <div className="flex justify-between gap-4 flex-3 max-w-[206px] xl:max-w-[260px] mx-10 md:mx-[60px]">
               {socialIcons.map(({ icon: Icon, name }) => (
-                <div key={name} className="w-[28px] h-[28px] xl:w-10 xl:h-10 border border-white rounded-full flex justify-center items-center">
-                  <Icon className="text-white w-[10px] h-[10px] xl:w-4 xl:h-4" />
-                </div>
+                <a href="https://github.com/victoriasokolvak/imperial-grand-hotel" key={name}>
+                  <div className="w-[28px] h-[28px] xl:w-10 xl:h-10 border border-white rounded-full flex justify-center items-center">
+                    <Icon className="text-white w-[10px] h-[10px] xl:w-4 xl:h-4" />
+                  </div>
+                </a>
               ))}
             </div>
           <div className="flex-1 h-[1px] bg-white"></div>
@@ -94,8 +96,12 @@ export const Footer = () => {
             © 2025 Imperial Grand Hotel. All Rights Reserved.
           </p>
           <div className="flex justify-between gap-10 md:gap-[60px]">
-            <p className="text-white text-[13px] xl:text-[14px] mb-[20px]">Privacy Policy</p>
-            <p className="text-white text-[13px] xl:text-[14px] mb-[20px]">Terms of Use</p>
+            <a href="https://github.com/victoriasokolvak/imperial-grand-hotel">
+              <p className="text-white text-[13px] xl:text-[14px] mb-[20px] hover:underline">Privacy Policy</p>
+            </a>
+            <a href="https://github.com/victoriasokolvak/imperial-grand-hotel">
+              <p className="text-white text-[13px] xl:text-[14px] mb-[20px] hover:underline">Terms of Use</p>
+            </a>
           </div>
         </div>
       </div>

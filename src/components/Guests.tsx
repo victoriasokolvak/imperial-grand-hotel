@@ -9,6 +9,7 @@ export const Guests = ({ name, src }: { name: string; src: string }) => {
           alt={name}
           width={50}
           height={50}
+          style={{ width: '100%', height: '100%' }}
           className="object-cover w-full h-full"
         />
       </div>

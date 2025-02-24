@@ -34,12 +34,14 @@ export const ServiceCard = ({ name, price }: { name: string; price: string }) =>
       </div>
 
       <div className="flex items-center">
-        <button className="flex justify-between py-[10px] lg:py-[14px] px-[6px] border-y-[1px] border-[#BF9766] items-center gap-[20px] text-[#BF9766] text-[13px] xl:text-[16px] italic">
-          Book Now
-          <div className="w-[6px] h-3">
-          <Arrow />
-          </div>
-        </button>
+        <a href="#booking">
+          <button className="flex justify-between py-[10px] lg:py-[14px] px-[6px] border-y-[1px] border-[#BF9766] items-center gap-[20px] text-[#BF9766] text-[13px] xl:text-[16px] italic transition-transform duration-300 hover:translate-x-1">
+              Book Now
+              <div className="w-[6px] h-3">
+              <Arrow />
+              </div>
+          </button>
+        </a>
       </div>
     </div>
   );

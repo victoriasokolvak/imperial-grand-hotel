@@ -9,6 +9,10 @@
   --font-poppins: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -21,3 +25,15 @@ body {
 .font-forum {
   font-family: var(--font-forum);
 }
+
+.custom-calendar {
+  font-family: var(--font-forum) !important;
+  border-radius: 0% !important;
+}
+
+.custom-selected-day {
+  background-color: #BF9766 !important;
+  color: white !important;
+  border-radius: 0% !important;
+}
+
