@@ -1,9 +1,9 @@
 export const imageDetails = [
-  { id: 1, src: "/Superior-suite.png", alt: "Superior Suite" },
-  { id: 2, src: "/Signature-room.png", alt: "Signature Room" },
-  { id: 3, src: "./Grand-deluxe-room.png", alt: "Grand Deluxe Room" },
-  { id: 4, src: "./Executive-suite.png", alt: "Executive Suite" },
-  { id: 5, src: "./Skyline-suite.png", alt: "Skyline Suite"},
+  { id: 1, src: "./Superior-suite.png", alt: "Superior Suite" },
+  { id: 2, src: "./Signature-room.jpg", alt: "Signature Room" },
+  { id: 3, src: "./Grand-deluxe-room.jpg", alt: "Grand Deluxe Room" },
+  { id: 4, src: "./Executive-suite.jpg", alt: "Executive Suite" },
+  { id: 5, src: "./Skyline-suite.jpg", alt: "Skyline Suite"},
 ];
 
 export const roomDetails = [

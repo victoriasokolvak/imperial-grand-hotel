@@ -3,13 +3,12 @@ import Image from "next/image";
 export const Guests = ({ name, src }: { name: string; src: string }) => {
   return (
     <div className="flex items-center gap-1 lg:gap-2">
-      <div className="w-[50px] h-[50px] lg:w-[94px] lg:h-[94px] rounded-full overflow-hidden border-[3px] border-[#BF9766]">
+      <div className="relative w-[50px] h-[50px] lg:w-[94px] lg:h-[94px] rounded-full overflow-hidden border-[3px] border-[#BF9766]">
         <Image
           src={src}
           alt={name}
-          width={50}
-          height={50}
-          style={{ width: '100%', height: '100%' }}
+          fill
+          sizes="50px"
           className="object-cover w-full h-full"
         />
       </div>

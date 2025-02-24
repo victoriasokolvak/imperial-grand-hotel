@@ -10,6 +10,7 @@ export const Discount = () => {
             src='./Discount.png'
             alt='Hotel'
             fill
+            placeholder="blur"
             className="object-cover"
             />
             <div className="absolute inset-0 bg-black opacity-40"></div>

@@ -26,6 +26,7 @@ export const TeamSection = () => {
                 alt={employee.name}
                 width={300}
                 height={385}
+                placeholder="blur"
                 style={{ width: "auto", height: "auto" }}
                 className="object-cover opacity-60 hover:opacity-100"
               />
