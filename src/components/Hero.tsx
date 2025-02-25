@@ -11,7 +11,6 @@ export const Hero = () => {
         alt='Hero Mobile'
         fill
         sizes="100vw"
-        placeholder="blur"
         className="object-cover block md:hidden"
         priority
       />
@@ -20,7 +19,6 @@ export const Hero = () => {
         alt='Hero'
         fill
         sizes="100vw"
-        placeholder="blur"
         className="object-cover hidden md:block"
         priority
       />

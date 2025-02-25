@@ -61,7 +61,6 @@ export const Slider = () => {
                 fill
                 sizes="(max-width: 768px) 100vw, 768px"
                 className="object-cover"
-                placeholder="blur"
               />
             </SwiperSlide>
           ))}
@@ -89,10 +88,10 @@ export const Slider = () => {
       </div>
 
       <div className="absolute top-[450px] md:top-[210px] transform -translate-y-1/2 flex justify-between w-[300px] xs:w-[400px] md:w-[660px] xl:w-[1150px]">
-        <div className="w-[7px] h-[14px] rotate-180 cursor-pointer" onClick={goToPrev}>
+        <div className="w-[7px] h-[14px] rotate-180 cursor-pointer" onClick={goToPrev} title="Go to previous slide">
           <Arrow />
         </div>
-        <div className="w-[7px] h-[14px] cursor-pointer" onClick={goToNext}>
+        <div className="w-[7px] h-[14px] cursor-pointer" onClick={goToNext} title="Go to next slide">
           <Arrow />
         </div>
       </div>

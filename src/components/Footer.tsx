@@ -61,12 +61,14 @@ export const Footer = () => {
                 placeholder="Your Email Here"
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
+                title="Enter your email address"
                 className="appearance-none bg-[#302F2F] placeholder:text-[#BF9766] focus:text-[#BF9766]
                           placeholder:text-[13px] xl:placeholder:text-[14px] border-none
                           text-white py-[10px] px-4 focus:outline-none w-[160px] xl:w-[224px]"
               />
               <button
                 type="submit"
+                title="Submit"
                 className="bg-[#BF9766] hover:bg-[#a87f5c] h-[44px] px-4"
               >
                 <div className="w-[7px] h-[14px]">
@@ -82,7 +84,7 @@ export const Footer = () => {
             <div className="flex justify-between gap-4 flex-3 max-w-[206px] xl:max-w-[260px] mx-10 md:mx-[60px]">
               {socialIcons.map(({ icon: Icon, name }) => (
                 <a href="https://github.com/victoriasokolvak/imperial-grand-hotel" key={name}>
-                  <div className="w-[28px] h-[28px] xl:w-10 xl:h-10 border border-white rounded-full flex justify-center items-center">
+                  <div title={name} className="w-[28px] h-[28px] xl:w-10 xl:h-10 border border-white rounded-full flex justify-center items-center">
                     <Icon className="text-white w-[10px] h-[10px] xl:w-4 xl:h-4" />
                   </div>
                 </a>

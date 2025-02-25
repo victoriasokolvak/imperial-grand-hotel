@@ -63,10 +63,10 @@ export const ReviewsSlider = () => {
       </div>
 
       <div className="flex justify-between w-full mb-[23px] lg:mb-[55px]">
-        <div className="w-[7px] h-[14px] rotate-180 cursor-pointer" onClick={goToPrev}>
+        <div className="w-[7px] h-[14px] rotate-180 cursor-pointer" onClick={goToPrev} title="Go to previous slide">
           <Arrow />
         </div>
-        <div className="w-[7px] h-[14px] cursor-pointer" onClick={goToNext}>
+        <div className="w-[7px] h-[14px] cursor-pointer" onClick={goToNext} title="Go to next slide">
           <Arrow />
         </div>
       </div>

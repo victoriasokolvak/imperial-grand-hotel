@@ -30,6 +30,7 @@ export const BookingWidget = () => {
                 <label className="block mb-3 text-white font-forum text-[18px] xl:text-[24px] leading-none">{label}</label>
                 <div className="relative w-full bg-[#302F2F]">
                   <DatePicker
+                    title="Select a date"
                     selected={value}
                     onChange={onChange}
                     dateFormat="d MMMM yyyy"

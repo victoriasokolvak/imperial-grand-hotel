@@ -13,7 +13,6 @@ export const AboutSection = () => {
               alt="Reception desk"
               sizes="(max-height: 640px) 290px, (min-width: 641px) 100%, (min-height: 641) 100%"
               fill
-              placeholder="blur"
               className="object-cover"
             />
             <div className="absolute -bottom-[25px] right-[42px] md:right-0 md:translate-x-1/2 md:top-1/2 md:-translate-y-1/2 bg-[#BF9766] w-[50px] h-[50px] lg:w-[100px] lg:h-[100px]">
