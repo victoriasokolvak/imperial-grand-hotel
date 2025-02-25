@@ -29,22 +29,22 @@ export const Hero = () => {
         <div className="max-w-[1440px] w-full px-8 md:px-[74px] xl:px-[120px]">
           <div className="flex flex-col justify-between gap-[15px] mb-4 xl:mb-6">
             <div className="border-l-[1px] h-[100px]"></div>
-            <h2 className="uppercase text-[#BF9766] font-light text-[18px] lg:text-[24px] tracking-widest md:tracking-[0.25em]">
+            <h2 className="uppercase text-accent font-light text-lg lg:text-2xl tracking-widest md:tracking-[0.25em]">
               Best place to relax & enjoy
             </h2>
           </div>
 
           <div className="flex flex-col">
-            <h1 className="font-forum text-[44px] md:text-[60px] lg:text-[112px] mb-8 text-white font-normal leading-[1.24]">
+            <h1 className="font-forum text-[44px] md:text-6xl lg:text-[112px] mb-8 text-white font-normal leading-[1.24]">
               Perfect Place to <br /> Enjoy Your Life
             </h1>
             <div className='flex flex-col'>
-              <h3 className='text-white text-[13px] xl:text-[18px] tracking-wide mb-[6px] xl:mb-3'>
+              <h3 className='text-white text-[13px] xl:text-lg tracking-wide mb-[6px] xl:mb-3'>
                 4.8 Rated Around The World
               </h3>
               <div className='flex justify-between w-[52px] xl:w-32 gap-[3px] xl:gap-[6px]'>
                 {stars.map((_, index) => (
-                  <div key={index} className='w-2 h-2 xl:w-[20px] xl:h-[20px]'>
+                  <div key={index} className='w-2 h-2 xl:w-5 xl:h-5'>
                     <Star />
                   </div>
                 ))}

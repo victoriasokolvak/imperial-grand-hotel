@@ -77,7 +77,7 @@ export const Slider = () => {
           initialSlide={0}
           allowTouchMove={false}
           loop={false} 
-          className="p-[30px] xl:p-[40px] max-w-[250px] xs:max-w-[350px] xl:max-w-[600px]"
+          className="p-[30px] xl:p-10 max-w-[250px] xs:max-w-[350px] xl:max-w-[600px]"
         >
           {roomDetails.map((room) => (
             <SwiperSlide key={room.id}>
@@ -88,23 +88,27 @@ export const Slider = () => {
       </div>
 
       <div className="absolute top-[450px] md:top-[210px] transform -translate-y-1/2 flex justify-between w-[300px] xs:w-[400px] md:w-[660px] xl:w-[1150px]">
-        <div className="w-[7px] h-[14px] rotate-180 cursor-pointer" onClick={goToPrev} title="Go to previous slide">
-          <Arrow />
+        <div className="cursor-pointer p-2 lg:p-4" onClick={goToPrev} title="Go to previous slide">
+          <div className="w-[7px] h-[14px] rotate-180">
+            <Arrow />
+          </div>
         </div>
-        <div className="w-[7px] h-[14px] cursor-pointer" onClick={goToNext} title="Go to next slide">
-          <Arrow />
+        <div className="cursor-pointer p-2 lg:p-4" onClick={goToNext} title="Go to next slide">
+          <div className="w-[7px] h-[14px]">
+            <Arrow />
+          </div>
         </div>
       </div>
 
-      <div className="absolute bottom-[-60px] flex items-center gap-2 w-[80px] h-[16px]">
+      <div className="absolute bottom-[-60px] flex items-center gap-2 w-20 h-4">
         {imageDetails.map((_, index) => (
           <button
             key={index}
             className={
               `w-2 h-2 rounded-full transition-all duration-700 ${
                 activeIndex === index 
-                  ? "bg-[#BF9766] w-4 h-4" 
-                  : "bg-[#D9D9D9]"
+                  ? "bg-accent w-4 h-4" 
+                  : "bg-light-grey"
               }`
             }
             onClick={() => goToSlide(index)}

@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export const TeamSection = () => {
   return (
-    <section id="team" className="flex justify-center items-center w-full bg-[#282828] py-[70px] lg:py-[100px]">
+    <section id="team" className="flex justify-center items-center w-full bg-dark-background py-[70px] lg:py-[100px]">
       <div className="flex flex-col justify-center items-center w-full max-w-[1440px] px-8 md:px-[74px] xl:px-[120px]">
         <div className="flex flex-col items-center mb-[14px] md:mb-[30px] lg:mb-[60px]">
           <div className="border-l-[1px] border-white h-[105px] mb-8 md:mb-4 lg:mb-8"></div>
-          <h2 className="uppercase text-[#BF9766] font-light text-[18px] lg:text-[24px] mb-1 tracking-[0.2em] md:tracking-[0.25em]">
+          <h2 className="uppercase text-accent font-light text-lg lg:text-2xl mb-1 tracking-[0.2em] md:tracking-[0.25em]">
             Meet our team
           </h2>
           <h1 className="text-center font-forum text-[35px] md:text-[40px] lg:text-[64px] text-white font-normal leading-[1.26]">
@@ -31,7 +31,7 @@ export const TeamSection = () => {
               />
               <div
                 className="flex justify-between items-center gap-[30px]
-                          w-[300px] h-[120px] bg-[#BF9766] px-[30px]
+                          w-[300px] h-[120px] bg-accent px-[30px]
                           absolute bottom-0 opacity-0 group-hover:opacity-100
                           active:opacity-100 active:translate-y-0 transition-all
                           duration-500 transform translate-y-full

@@ -11,9 +11,9 @@ type BurgerMenuProps = {
 
 export const BurgerMenu: React.FC<BurgerMenuProps> = ({ onClose }) => {
   return (
-    <div className="flex flex-col bg-[#282828] w-screen h-screen z-10">
-      <div className="flex justify-between items-center px-8 py-9 md:px-[74px] bg-[#302F2F]">
-        <div className="w-[160px] h-[40px] relative">
+    <div className="flex flex-col bg-dark-background w-screen h-screen z-10">
+      <div className="flex justify-between items-center px-8 py-9 md:px-[74px] bg-dark-accent">
+        <div className="w-40 h-10 relative">
           <Image 
             src='./Logo.svg'
             alt="Logo"
@@ -30,7 +30,7 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({ onClose }) => {
         <ul className="flex flex-col justify-between gap-7 md:gap-10">
           {navigationItems.map((link) => (
             <li key={link.name}>
-              <a onClick={onClose} href={link.href} className="text-white text-[30px] md:text-[40px] uppercase">{link.name}</a>
+              <a onClick={onClose} href={link.href} className="text-white text-3xl md:text-[40px] uppercase">{link.name}</a>
             </li>
           ))}
         </ul>

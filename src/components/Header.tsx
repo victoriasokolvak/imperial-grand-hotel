@@ -20,7 +20,7 @@ export const Header = () => {
   return (
     <>
       <header className="flex justify-between items-center absolute top-0 w-full z-10 px-8 pt-9 md:px-[74px] xl:px-[120px] max-w-[1440px] mx-auto">
-        <div className="w-[160px] h-[40px] lg:w-[216px] lg:h-[58px] relative">
+        <div className="w-40 h-10 lg:w-[216px] lg:h-[58px] relative">
           <Image 
             src='./Logo.svg'
             alt="Logo"

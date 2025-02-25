@@ -54,7 +54,7 @@ export const ReviewsSlider = () => {
         >
           {reviews.map((guest) => (
             <SwiperSlide key={guest.name}>
-              <p className="text-center text-[#575656] text-[13px] lg:text-[18px]">
+              <p className="text-center text-grey text-[13px] lg:text-lg">
               <em>&quot;</em> {guest.comment}<em>&quot;</em>
               </p>
             </SwiperSlide>
@@ -63,11 +63,15 @@ export const ReviewsSlider = () => {
       </div>
 
       <div className="flex justify-between w-full mb-[23px] lg:mb-[55px]">
-        <div className="w-[7px] h-[14px] rotate-180 cursor-pointer" onClick={goToPrev} title="Go to previous slide">
-          <Arrow />
+        <div className="cursor-pointer p-2 lg:p-4" onClick={goToPrev} title="Go to previous slide">
+          <div className="w-[7px] h-[14px] rotate-180">
+            <Arrow />
+          </div>
         </div>
-        <div className="w-[7px] h-[14px] cursor-pointer" onClick={goToNext} title="Go to next slide">
-          <Arrow />
+        <div className="cursor-pointer p-2 lg:p-4" onClick={goToNext} title="Go to next slide">
+          <div className="w-[7px] h-[14px]">
+            <Arrow />
+          </div>
         </div>
       </div>
 
@@ -91,15 +95,15 @@ export const ReviewsSlider = () => {
         </Swiper>
       </div>
 
-      <div className="mt-[30px] md:mt-[43px] lg:mt-[60px] flex items-center gap-2 w-[80px] h-[16px]">
+      <div className="mt-[30px] md:mt-[43px] lg:mt-[60px] flex items-center gap-2 w-20 h-4">
         {reviews.map((_, index) => (
           <button
             key={index}
             className={
               `w-2 h-2 rounded-full transition-all duration-700 ${
                 activeIndex === index 
-                  ? "bg-[#BF9766] w-4 h-4" 
-                  : "bg-[#D9D9D9]"
+                  ? "bg-accent w-4 h-4" 
+                  : "bg-light-grey"
               }`
             }
             onClick={() => goToSlide(index)}
